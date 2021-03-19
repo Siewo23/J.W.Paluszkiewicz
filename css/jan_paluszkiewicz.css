@@ -1,24 +1,3 @@
-/*
-
-TemplateMo 547 Real Dynamic
-
-https://templatemo.com/jp-547-real-dynamic
-
-
-
-    COLOR
-    Gray: #474849 - Menu highlight color
-    Light gray: #65eeeeee7  - Background overlay color
-    Blue: #06C - Heading color
-    Gray: #ABC - ICON color
-    Green: #399 - Green button color
-    Purple:  #99C - Purple button color
-    Gray: #eeeeee - Text color
-    Light gray: #DCDDDE - Carousel item inactive color
-    Light gray: #F2F2F2 - Box color
-    Dark gray: #68696A - Testimonial title color
-*/
-
 body {
   font-family: 'Lato', Arial, sans-serif;
   font-size: 20px;
@@ -75,15 +54,11 @@ ul { line-height: 2; }
 .jp-header-stripe {
     height: 75px;
     width: 68.75%;
-    background-color: #474849;
-    background-image: url(../img/stripe-short.png);
 }
-
-.jp-header-stripe-short {
-    width: 62%;
-    margin-top: 75px;
+.jp-header-stripe-small {
+    height: 30px;
+    width: 68.75%;
 }
-
 .jp-site-header-left { padding-bottom: 55px; }
 
 .jp-site-header-right {
@@ -118,14 +93,18 @@ ul { line-height: 2; }
     margin-top: 50px;
     min-height: 800px;
     background: transparent;
-    max-width: 1798px;
+    max-width: 100%;
 }
 
 .jp-intro-text { font-size: 2.6rem;
                  font-weight: bold;
                }
-.jp-text-primary { color: #ffffff;
-                   font-weight: bold;}
+.jp-title-text { font-size: 1.6rem;
+                 font-weight: bold;
+                }
+.jp-text-primary {
+  color: #ffffff;
+}
 .jp-text-dark-gray { color: #eeeeee; }
 
 .jp-my-1 {
@@ -218,9 +197,6 @@ ul li { list-style: none; }
 .jp-text-link:hover { color: #eeeeee; }
 .jp-carousel { padding-bottom: 30px; }
 
-/*
-  Slick dots
-*/
 .slick-dots li { width: 20px; }
 .slick-dots li button { width: 15px; }
 
@@ -249,7 +225,6 @@ ul li { list-style: none; }
 .star { padding: 2px; }
 .checked { color: orange; }
 
-/* About */
 .jp-about-box { max-width: 840px; }
 .jp-company-background-col { max-width: 720px; }
 .jp-company-background { max-width: 520px; }
@@ -311,19 +286,13 @@ i { color: #ABC; }
   .jp-members { max-width: 260px; }
 }
 
-/*
-  Gallery Item Hover Effect
-  https://tympanus.net/codrops/2014/06/19/ideas-for-subtle-hover-effects/
-*/
-
-/* Common style */
 .jp-member figure,
 .jp-gallery-item figure {
   position: relative;
   float: left;
   overflow: hidden;
   margin-bottom: 0;
-  background: #462d15ff;
+  background: #462d15;
   text-align: center;
   cursor: pointer;
 }
@@ -365,8 +334,6 @@ i { color: #ABC; }
   height: 100%;
 }
 
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
 .jp-member figure figcaption > a,
 .jp-gallery-item figure figcaption > a {
   z-index: 1000;
@@ -384,10 +351,6 @@ i { color: #ABC; }
   font-size: 68.5%;
   color: white;
 }
-
-/*---------------*/
-/***** Bubba *****/
-/*---------------*/
 
 figure.effect-bubba { background: #312519ff; }
 
@@ -428,7 +391,7 @@ figure.effect-bubba figcaption::after {
 
 figure.effect-bubba h2 {
   font-size: 1.5rem;
-  padding-top: 20%;
+  padding-top: 5%;
   opacity: 0;
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
@@ -519,7 +482,6 @@ figure.effect-bubba:hover .jp-member-social {
   margin-left: auto;
   margin-right: 0;
 }
-/* scalle of the gallery and items */
 
 .jp-gallery {
   margin: 0 auto;
@@ -528,8 +490,9 @@ figure.effect-bubba:hover .jp-member-social {
 
 .jp-gallery-item {
   width: 100%;
-  max-width: 500px;
-  margin: 2.7%;
+  max-width: 30%;
+  min-width: 300px;
+  margin: 1.6%;
 }
 
 .filters-button-group {
@@ -564,7 +527,6 @@ figure.effect-bubba:hover .jp-member-social {
 
 .jp-category-link.active .jp-category-label { color: #ffffff; }
 
-/* Contact */
 .mapouter{
   position:relative;
   text-align:right;
@@ -579,11 +541,13 @@ figure.effect-bubba:hover .jp-member-social {
   width:100%;
 }
 
-.jp-contact-row { max-width: 1122px; }
+.jp-contact-row { max-width: 100%; }
 
-.jp-contact-left,
+.jp-contact-left{
+  max-width: 30%;
+}
 .jp-contact-right {
-  max-width: 480px;
+  max-width: 70%;
 }
 
 .form-group { margin-bottom: 40px; }
@@ -615,7 +579,7 @@ select:not([multiple]) {
 
   .jp-gallery-item {
     margin: 1%;
-    width: 31%;
+    width: 30%;
   }
 
   .jp-category-label { font-size: 1.2rem; }
@@ -639,7 +603,6 @@ select:not([multiple]) {
 
 @media (max-width: 767px) {
   .jp-gallery {
-    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -751,7 +714,6 @@ select:not([multiple]) {
   .jp-gallery { max-width: 300px; }
 
   .jp-gallery-item {
-    width: 100%;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 15px;
@@ -765,7 +727,7 @@ select:not([multiple]) {
 }
 
 .nav-bg{
-    background-color: #3a2d21;
+    background: linear-gradient(#251d15 -10%, #3a2d21 20%, #3a2d21 80%, #251d15 110%);
 }
 
 .jp-con-bg{
@@ -776,4 +738,7 @@ select:not([multiple]) {
    margin-top: 30px;
    margin-bottom: 30px;
    max-width: 80%;
+}
+.text-justify{
+  text-align: justify;
 }
