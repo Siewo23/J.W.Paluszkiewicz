@@ -745,11 +745,10 @@ select:not([multiple]) {
 
 .compsoul-cookies {
   background: linear-gradient(#251d15 -10%, #3a2d21 20%, #3a2d21 80%, #251d15 110%);
-  border: 1px solid #000;
   box-sizing: border-box;
   bottom: 0;
   opacity: 0;
-  padding: 20px 160px 20px 20px;
+  padding: 20px 170px 10px 20px;
   position: fixed;
   width: 100%;
   z-index: -1;
@@ -815,4 +814,27 @@ select:not([multiple]) {
     opacity: 1;
     z-index: 1;
   }
+}
+.jpButton {
+	box-shadow: 0px 10px 14px -7px #251d15;
+	background:linear-gradient(to bottom, #251d15 5%, #4d3f31 100%);
+	background-color:#251d15;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #251d15;
+}
+.jpButton:hover {
+	background:linear-gradient(to bottom, #4d3f31 5%, #251d15 100%);
+	background-color:#4d3f31;
+}
+.jpButton:active {
+	position:relative;
+	top:1px;
 }
