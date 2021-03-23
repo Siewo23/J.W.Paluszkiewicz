@@ -744,7 +744,7 @@ select:not([multiple]) {
 }
 
 .compsoul-cookies {
-  background: #fff;
+  background: linear-gradient(#251d15 -10%, #3a2d21 20%, #3a2d21 80%, #251d15 110%);
   border: 1px solid #000;
   box-sizing: border-box;
   bottom: 0;
